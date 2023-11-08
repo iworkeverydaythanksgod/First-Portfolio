@@ -1,0 +1,113 @@
+/* Start Project */
+.services {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #dedede;
+}
+.services .container {
+  background-color: #eee;
+  padding: 20px;
+}
+.services .container .box {
+  padding: 20px;
+  background-color: #dedede;
+  margin: 20px;
+}
+.services .container .image:hover img {
+  transform: rotate(3deg) scale(1.1);
+  transition: 0.3s linear;
+}
+.services .container .box .image {
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%),
+    0px 2px 4px 0px rgb(0 0 0 / 12%);
+  width: fit-content;
+}
+
+.services .container .box .image .boxi {
+  overflow: hidden;
+  position: relative;
+}
+.services .container .box .image .boxi::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0px;
+  opacity: 0;
+  background-color: rgb(255 255 255 / 20%);
+  z-index: 2;
+}
+.services .container .box .image .boxi:hover::before {
+  animation: flashing 0.7s;
+}
+@keyframes flashing {
+  0%,
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+  }
+}
+.services img {
+  width: 425px;
+  transition: 0.3s linear;
+}
+.services .container .box .text h3 {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.services .container .box .text p {
+  padding-left: 10px;
+}
+.services .container .box button {
+  background-color: var(--color-sec);
+  color: var(--main-color);
+  margin-left: 350px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.services .container .box button:hover {
+  transform: scale(1.1);
+  background-color: var(--main-color);
+  color: #e63946;
+}
+/* End Project */
+
+
+/* Html */
+<div class="box">
+    <div class="image">
+        <div class="boxi">
+            <img src="./images/33813592_7969217.jpg" alt="">
+        </div>
+    </div>
+    <div class="text">
+        <h3>Portfolio</h3>
+        <p>Create Your Portfolio</p>
+    </div>
+    <button>Read More</button>
+</div>
+<div class="box">
+    <div class="image">
+        <div class="boxi">
+            <img src="./images/IMG-20231105-WA0012.jpg" alt="">
+        </div>
+    </div>
+    <div class="text">
+        <h3>Any Prand's</h3>
+        <p>Create Your Prand Website</p>
+    </div>
+    <button>Read More</button>
+</div>

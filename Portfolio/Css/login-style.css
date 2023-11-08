@@ -1,0 +1,130 @@
+/* global rules */
+
+:root {
+  --main-color: #f1faee;
+  --color-sec: #e63946;
+}
+/* global rules */
+
+.login {
+  display: grid;
+  height: 100vh;
+  background-color: #f4e1e5;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  position: relative;
+  padding: 50px;
+}
+.card-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 100px; */
+}
+.login .card-login {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  /* position: absolute; */
+  /* left: 50%; */
+  /* top: 50px; */
+  /* transform: translate(-50%,-50%); */
+}
+.login .card-login .your-mail {
+  text-align: center;
+  margin: 15px;
+  width: 100%;
+}
+.login .card-login h1 {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.login .card-login .social {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.login .card-login .social i {
+  margin-right: 5px;
+}
+
+.login .card-login form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.login .card-login form .email {
+  padding: 10px;
+  border: none;
+  background: #f6f6f6;
+  display: block;
+  margin: 10px;
+  width: 80%;
+}
+.login .card-login form .pass {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  background: #f6f6f6;
+  display: block;
+  width: 80%;
+}
+
+.login .card-login a {
+  width: 100%;
+  text-align: center;
+}
+
+.login .card-login .submit-butt {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login .card-login .submit-butt input {
+    background-color: var(--color-sec);
+    padding: 10px;
+    width: 150px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s linear;
+}
+.login .card-login .submit-butt input:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.text-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-sec);
+    padding: 20px;
+    color: white;
+    height: 379px;
+    margin: 20px;
+}
+.card-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-card h1{
+    text-align: center;
+}
+.text-card p{
+    text-align: center;
+    font-size:18px;
+}
+
+.text-card p span{
+    color: black;
+    font-size: 20px;
+}
